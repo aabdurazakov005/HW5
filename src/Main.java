@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println("Task 3");
         int year = 2024;
-        if (year >= 1594 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 ==0))) {
+        if (year >= 1584 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 ==0))) {
             System.out.println(year + " год является високостным.");
         } else {
             System.out.println(year + " год не является високостным.");
@@ -34,7 +34,7 @@ public class Main {
         int days = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней:" + days);
-        } else if (deliveryDistance>=20 && deliveryDistance<=60) {
+        } else if (deliveryDistance>20 && deliveryDistance<60) {
             System.out.println("Потребуется дней:" + (days+1));
         } else if (deliveryDistance>=60 && deliveryDistance<=100) {
             System.out.println("Потребуется дней:" + (days+2));
@@ -43,7 +43,7 @@ public class Main {
         }
         System.out.println("");
         System.out.println("Task 5");
-        int monthNumber = 85;
+        int monthNumber = 13;
         switch (monthNumber){
             case 12:
             case 1:
@@ -65,8 +65,6 @@ public class Main {
             case 11:
                 System.out.println("Осень");
                 break;
-            default:
-                System.out.println("Ошибка!");
         }
     }
 }
