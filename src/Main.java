@@ -43,7 +43,10 @@ public class Main {
         }
         System.out.println("");
         System.out.println("Task 5");
-        int monthNumber = 13;
+        int monthNumber = 54;
+        if (monthNumber<1 || monthNumber>12){
+            System.out.println("Ввод некорректный!");
+        }
         switch (monthNumber){
             case 12:
             case 1:
